@@ -33,7 +33,9 @@ function App() {
   return (
     <>
       <nav
-        className={`fixed top-0 w-full z-10 ${scrolled ? "bg-gray-800" : null}`}
+        className={`fixed top-0 w-full z-10 ease-in-out duration-300 ${
+          scrolled ? "bg-gray-800" : null
+        }`}
       >
         <div className="lg:container px-5 mx-auto flex items-center py-6">
           <h1 className="text-3xl font-bold text-gray-300">Mapper</h1>
@@ -132,7 +134,7 @@ function App() {
                 key={paket.nama}
               >
                 {paket.rekomendasi && (
-                  <div className="absolute top-0 left-0 w-full -mt-3 flex items-center justify-center">
+                  <div className="absolute top-0 left-0 w-full -mt-4 flex items-center justify-center">
                     <div className=" rounded-full px-8 py-2 font-semibold text-white bg-[#ffc90d]">
                       Rekomendasi
                     </div>
