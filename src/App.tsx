@@ -69,10 +69,16 @@ function App() {
               Mudah
             </h1>
             <div className="mt-5 flex items-center justify-center gap-3">
-              <button className="rounded-md bg-[#ffc90d] py-3 px-8 font-semibold text-base hover:bg-opacity-80 text-gray-200">
+              <button
+                className="rounded-md bg-[#ffc90d] py-3 px-8 font-semibold text-base hover:bg-opacity-80 text-gray-200"
+                onClick={() => onGoTo(pricingRef)}
+              >
                 Mulai
               </button>
-              <button className="rounded-md bg-gray-300 py-3 px-8 font-semibold text-base hover:bg-opacity-80">
+              <button
+                className="rounded-md bg-gray-300 py-3 px-8 font-semibold text-base hover:bg-opacity-80"
+                onClick={() => onGoTo(hubKamiRef)}
+              >
                 Hubungi Kami
               </button>
             </div>
